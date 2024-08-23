@@ -9,5 +9,7 @@ export default function ProfileLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div>{children}</div>;
+  return (
+    <main className="min-h-screen max-w-screen-xl mx-auto">{children}</main>
+  );
 }
