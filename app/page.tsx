@@ -1,5 +1,9 @@
-import { redirect } from "next/navigation";
+import HeaderNav from "@/components/nav/header-nav";
 
 export default function Home() {
-  redirect("/profile");
+  return (
+    <div>
+      <HeaderNav />
+    </div>
+  );
 }
