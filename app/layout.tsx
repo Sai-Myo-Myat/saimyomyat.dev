@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
+import { Marcellus } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const besley = Marcellus({ subsets: ["latin"], weight: "400" });
 
 export default function RootLayout({
   children,
@@ -10,8 +10,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main className="min-h-screen max-w-screen-lg mx-auto px-4">
+      <body
+        className={besley.className}
+        style={{
+          backgroundImage: "url('/news_paper_background.jpg')",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
+        <main>
           {children}
         </main>
       </body>

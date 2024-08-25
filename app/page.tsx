@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <CustomCursor />
       <HeaderNav />
-      <div>
+      <div className="min-h-screen max-w-screen-lg mx-auto px-4">
         <ProfileSection />
         <ProjectsSection />
         <BlogsSection />

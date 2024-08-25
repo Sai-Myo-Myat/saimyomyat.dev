@@ -5,7 +5,7 @@ import BlogCard from "@/components/blogs/blog-card";
 const BlogsSection = () => {
   return (
     <section id="blogs" className="h-[70vh] py-20">
-      <h1>Blogs</h1>
+      <h1 className="border-y-2 py-1 my-2">Blogs</h1>
       <div>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus
         animi fuga possimus pariatur quia itaque quos sapiente eos ad, a

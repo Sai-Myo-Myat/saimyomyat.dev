@@ -8,7 +8,7 @@ interface Props {
 
 const BlogCard: React.FC<Props> = ({ blog }) => {
   return (
-    <div className="border border-dashed px-4 py-2 rounded-lg border-gray-500">
+    <div className="border border-dashed px-4 py-2 rounded-lg">
       <div className="flex flex-col-reverse">
         <ClickableH3>{blog.title}</ClickableH3>
         <p className="text-muted-foreground italic text-xs">{blog.date}</p>
