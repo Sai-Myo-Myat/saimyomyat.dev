@@ -7,15 +7,15 @@ import ProjectsSection from "@/sections/projects-section";
 
 export default function Home() {
   return (
-    <div>
+    <div className="relative">
       <CustomCursor />
       <HeaderNav />
       <div className="min-h-screen max-w-screen-lg mx-auto px-4">
         <ProfileSection />
         <ProjectsSection />
         <BlogsSection />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }
