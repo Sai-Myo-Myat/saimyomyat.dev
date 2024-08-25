@@ -6,11 +6,9 @@ const BlogsSection = () => {
   return (
     <section id="blogs" className="h-[70vh] py-20">
       <h1 className="border-y-2 py-1 my-2">Blogs</h1>
-      <div>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus
-        animi fuga possimus pariatur quia itaque quos sapiente eos ad, a
-        temporibus consectetur, sed culpa sunt impedit aut nulla laudantium vel.
-      </div>
+      <p>
+        {`"Sai Myo Myat's blogs share his perspectives on software development."`}
+      </p>
       <div className="my-8 flex flex-col gap-4">
         <BlogCard
           blog={{
