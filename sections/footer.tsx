@@ -10,7 +10,7 @@ const Footer = () => {
         url="https://www.linkedin.com/in/saimyo-myat-862729229/"
       />
       <LinkIcon
-        icon={<h3>Up Work</h3>}
+        icon={<h4 className="font-extrabold">Up Work</h4>}
         url="https://www.upwork.com/freelancers/~018080e88edad80076"
       />
     </footer>

@@ -5,7 +5,7 @@ import BlogCard from "@/components/blogs/blog-card";
 const BlogsSection = () => {
   return (
     <section id="blogs" className="h-[70vh] py-20">
-      <h1 className="border-y-2 py-1 my-2">Blogs</h1>
+      <h1 className="py-1 my-2">Blogs</h1>
       <p>
         {`"Sai Myo Myat's blogs share his perspectives on software development."`}
       </p>

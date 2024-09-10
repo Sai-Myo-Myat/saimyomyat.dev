@@ -6,7 +6,7 @@ interface Props {
 
 const Tag: React.FC<Props> = ({ text }) => {
   return (
-    <div className="border border-primary text-primary text-center text-xs py-1 px-2 rounded-md">
+    <div className="border border-primary text-primary text-center text-xs font-extrabold py-1 px-2 rounded-md">
       {text}
     </div>
   );
