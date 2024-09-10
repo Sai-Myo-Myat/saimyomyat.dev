@@ -21,7 +21,7 @@
     --accent-foreground: 222.2 47.4% 11.2%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 39, 0%, 0%;
+    --border: 195 81% 35%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
     --radius: 0.5rem;
@@ -68,20 +68,21 @@ html {
 
 h1 {
   font-size: xx-large;
-  font-weight: 600
+  font-weight: 700;
 }
 
 h2 {
   font-size: x-large;
-  font-weight: 500
+  font-weight: 600;
 }
 
 h3 {
+  font-size: x-large;
   font-weight: 500;
 }
 
 p {
-  font-size: large;
+  font-size: medium;
   letter-spacing: .07em;
 }
 
