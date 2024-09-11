@@ -20,13 +20,15 @@ const ProfileSection = () => {
               Contact him.
             </a>
           </p>
-          <div className="flex items-center gap-1">
-            <span>Download CV.</span>
-            <HardDriveDownload
-              size={17}
-              className="text-primary cursor-pointer"
-            />
-          </div>
+          <a href="/cv.pdf" target="_blank" className="max-w-max">
+            <div className="flex items-center gap-2">
+              <span className="hover:underline hover:text-primary font-semibold">Download CV.</span>
+              <HardDriveDownload
+                size={18}
+                className="text-primary cursor-pointer"
+              />
+            </div>
+          </a>
         </div>
         <div className="sm:flex-1 w-full h-[30vh]"></div>
       </div>
