@@ -1,7 +1,12 @@
 "use client";
 
 import ProjectCard from "@/components/projects/project-card";
+import { cn } from "@/lib/utils";
 import { ProjectType } from "@/types/projects";
+
+import { Playpen_Sans } from "next/font/google";
+
+const playpen_sans = Playpen_Sans({ weight: "400", subsets: ["latin"] });
 
 const projects: ProjectType[] = [
   {
@@ -27,9 +32,9 @@ const projects: ProjectType[] = [
 const ProjectsSection = () => {
   return (
     <section id="projects" className="py-10 lg:py-20">
-      <h1 className="py-1 mb-2">Featured Projects</h1>
-      <p>
-        {`"Sai Myo Myat's software development projects that blend creativity with
+      <h1 className="py-1">Featured Projects</h1>
+      <p className={cn(playpen_sans.className, "xs:text-xl py-2")}>
+        {`"Projects are blended with creativity &
         technical expertise."`}
       </p>
       <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-12 my-4">

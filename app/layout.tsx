@@ -1,7 +1,7 @@
 import { Marcellus, Roboto } from "next/font/google";
 import "./globals.css";
 
-const besley = Roboto({ subsets: ["latin"], weight: "300" });
+const roboto = Roboto({ subsets: ["latin"], weight: "300" });
 
 export default function RootLayout({
   children,
@@ -11,7 +11,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={besley.className}
+        className={roboto.className}
       >
         <main>
           {children}

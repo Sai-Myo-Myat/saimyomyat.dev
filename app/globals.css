@@ -86,6 +86,10 @@ p {
   letter-spacing: .07em;
 }
 
+svg {
+  cursor: pointer
+}
+
 @layer base {
   * {
     @apply border-border;
