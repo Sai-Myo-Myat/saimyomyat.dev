@@ -1,7 +1,19 @@
-import React, { PropsWithChildren } from "react";
+import { cn } from "@/lib/utils";
+import React, { HTMLAttributes } from "react";
 
-const ClickableH3: React.FC<PropsWithChildren> = ({ children }) => {
-  return <h3 className="hover:underline cursor-pointer text-sm md:text-base">{children}</h3>;
+interface Props extends HTMLAttributes<HTMLDivElement> {}
+
+const ClickableH3: React.FC<Props> = ({ className, children }) => {
+  return (
+    <h3
+      className={cn(
+        "hover:underline cursor-pointer text-sm md:text-base",
+        className
+      )}
+    >
+      {children}
+    </h3>
+  );
 };
 
 export default ClickableH3;
