@@ -9,7 +9,7 @@ const ContactSection = () => {
         <Button asChild className="text-sm">
           <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>Get in touch!</a>
         </Button>
-        <div className="flex gap-2 text-xs">
+        <div className="flex items-center gap-2 text-xs">
           <p className="text-sm">Coded with </p>
           <HeartIcon className="text-primary" />
           <p className="text-sm">by Sai Myo Myat... </p>
