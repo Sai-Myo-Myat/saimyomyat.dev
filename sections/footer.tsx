@@ -3,7 +3,7 @@ import { GithubIcon, LinkedinIcon } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer id="contacts" className="flex flex-wrap justify-around py-4">
+    <footer className="flex flex-wrap justify-between py-4">
       <LinkIcon icon={<GithubIcon />} url="https://github.com/Sai-Myo-Myat" />
       <LinkIcon
         icon={<LinkedinIcon />}

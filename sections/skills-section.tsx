@@ -6,7 +6,7 @@ import { PropsWithChildren } from "react";
 
 const SkillsSection = () => {
   return (
-    <div>
+    <section id="skills">
       <h1 className="py-1 my-4">Skills</h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, quae
@@ -34,7 +34,7 @@ const SkillsSection = () => {
           </SkillLogo>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
