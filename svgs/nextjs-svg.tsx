@@ -3,7 +3,7 @@ import * as React from "react";
 
 function IconNextjs(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg fill="none" viewBox="0 0 15 15" height="3em" width="3em" {...props}>
+    <svg fill="none" viewBox="0 0 16 16" height="3em" width="3em" {...props}>
       <path
         fill="currentColor"
         fillRule="evenodd"

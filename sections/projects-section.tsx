@@ -1,5 +1,3 @@
-"use client";
-
 import ProjectCard from "@/components/projects/project-card";
 import { cn } from "@/lib/utils";
 import { ProjectType } from "@/types/projects";
