@@ -1,3 +1,4 @@
+import Loader from "@/components/Loader";
 import CustomCursor from "@/components/base/custom-cursor";
 import HeaderNav from "@/components/nav/header-nav";
 import BlogsSection from "@/sections/blogs-section";
@@ -12,6 +13,7 @@ export default function Home() {
     <div className="relative">
       <CustomCursor />
       <HeaderNav />
+      <Loader>saimyomyat.dev</Loader>
       <div className="min-h-screen max-w-screen-lg mx-auto px-6 sm:px-4">
         <ProfileSection />
         <ProjectsSection />
