@@ -1,17 +1,32 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import gsap from "gsap";
 import { HardDriveDownload } from "lucide-react";
 
 import { Bree_Serif } from "next/font/google";
+import { useEffect, useRef } from "react";
 
 const bree_serif = Bree_Serif({ weight: "400", subsets: ["latin"] });
 
 const ProfileSection = () => {
+  const profileRef = useRef(null);
+  useEffect(() => {
+    const q = gsap.utils.selector(profileRef);
+
+    const tl = gsap.timeline({
+      defaults: { duration: 0.7 },
+    });
+
+    tl.fromTo(q(".profile-intro"), { x: -100 }, { x: 0, delay: 1.3 });
+  }, []);
   return (
     <section id="profile" className="pt-10 lg:pt-20">
-      <div className="flex flex-wrap gap-4 justify-between py-4">
-        <div className="flex-1 flex flex-col gap-2 border-x-2 border-black px-2">
+      <div
+        className="flex flex-wrap gap-4 justify-between py-4"
+        ref={profileRef}
+      >
+        <div className="relative flex-1 flex flex-col gap-2 border-x-2 border-black px-2 profile-intro">
           <div className="flex gap-2">
             <h1
               className={cn(
