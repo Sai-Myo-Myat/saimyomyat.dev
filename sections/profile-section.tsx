@@ -43,7 +43,7 @@ const ProfileSection = () => {
             I am a full-stack developer with over two years of experiences in
             <span className="font-semibold">
               {" "}
-              developing createive websites and mobile apps
+              developing creative websites and mobile apps
             </span>
             .
           </p>

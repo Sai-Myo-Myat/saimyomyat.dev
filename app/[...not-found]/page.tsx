@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { BanIcon } from "lucide-react";
 import { Playpen_Sans } from "next/font/google";
-import GoBack from "./go-back";
+import GoBack from "../../components/base/go-back-button";
 
 const playpen_sans = Playpen_Sans({ weight: "400", subsets: ["latin"] });
 
