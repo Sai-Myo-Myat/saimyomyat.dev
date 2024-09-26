@@ -14,7 +14,7 @@ export default function Home() {
       <CustomCursor />
       <HeaderNav />
       <Loader>saimyomyat.dev</Loader>
-      <div className="min-h-screen max-w-screen-lg mx-auto px-6 sm:px-4">
+      <div className="min-h-screen max-w-screen-lg mx-auto px-4 sm:px-6">
         <ProfileSection />
         <ProjectsSection />
         <SkillsSection />
