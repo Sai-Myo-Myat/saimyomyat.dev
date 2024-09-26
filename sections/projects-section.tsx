@@ -42,6 +42,7 @@ const ProjectsSection = () => {
 
     tl.fromTo(q(".projects-section"), { y: 100 }, { y: 0, delay: 1.5 });
   }, []);
+
   return (
     <section
       id="projects"

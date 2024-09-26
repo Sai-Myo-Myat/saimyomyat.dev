@@ -3,8 +3,8 @@ import IconNextjs from "@/svgs/nextjs-svg";
 import IconBxlPostgresql from "@/svgs/postgresql-svg";
 import IconReactjsFill from "@/svgs/reactjs-svg";
 import IconTailwindcss from "@/svgs/tailwind-svg";
-import { PropsWithChildren } from "react";
 
+import SkillLogo from "@/components/skills/skill-logo";
 import { cn } from "@/lib/utils";
 import { Playpen_Sans } from "next/font/google";
 
@@ -42,18 +42,6 @@ const SkillsSection = () => {
         </div>
       </div>
     </section>
-  );
-};
-
-interface Props {
-  title: string;
-}
-const SkillLogo: React.FC<PropsWithChildren<Props>> = ({ title, children }) => {
-  return (
-    <div className="flex flex-col items-center gap-2">
-      {children}
-      <span className="text-sm font-semibold">{title}</span>
-    </div>
   );
 };
 
