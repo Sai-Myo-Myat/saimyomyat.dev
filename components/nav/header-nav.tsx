@@ -15,7 +15,7 @@ const HeaderNav = () => {
         {navLinks.map((link) => {
           return (
             <Link key={link.url} href={link.url}>
-              <ClickableH3>{link.text}</ClickableH3>
+              <ClickableH3 className="font-bold sm:text-lg">{link.text}</ClickableH3>
             </Link>
           );
         })}
