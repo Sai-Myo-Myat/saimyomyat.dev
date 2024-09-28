@@ -1,4 +1,8 @@
-import Footer from "@/sections/footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "404",
+};
 
 export default function NotFoundLayout({
   children,

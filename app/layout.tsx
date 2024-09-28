@@ -5,9 +5,16 @@ import "./globals.css";
 const roboto = Roboto({ subsets: ["latin"], weight: "300" });
 
 export const metadata: Metadata = {
-  title: "Sai Myo Myat",
+  title: { template: "%s | Sai Myo Myat", default: "Sai Myo Myat" },
   description:
     "I am a full-stack developer with over two years of experiences in developing createive websites and mobile apps",
+  creator: "Sai Myo Myat",
+  keywords: ["Next.js", "React", "JavaScript", "Portfolio", "Sai Myo Myat"],
+  formatDetection: {
+    email: true,
+    telephone: true,
+    address: true,
+  },
 };
 
 export default function RootLayout({
