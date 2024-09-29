@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: `https://portfolio-seven-kohl-54.vercel.app/sitemap`,
+    sitemap: `https://portfolio-seven-kohl-54.vercel.app/sitemap.xml`,
   };
 }
