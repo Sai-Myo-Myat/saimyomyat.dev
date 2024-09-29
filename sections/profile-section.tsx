@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { HardDriveDownload } from "lucide-react";
 
 import { Bree_Serif } from "next/font/google";
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 
 const bree_serif = Bree_Serif({ weight: "400", subsets: ["latin"] });
@@ -59,7 +60,15 @@ const ProfileSection = () => {
             </div>
           </a>
         </div>
-        <div className="sm:flex-1 w-full h-[30vh]"></div>
+        <div className="sm:flex-1 w-full min:h-[30vh] flex items-center justify-center sm:justify-end">
+          <Image
+            src={"/me.jpg"}
+            alt="my-profile-picture"
+            width={400}
+            height={340}
+            className="rounded-md w-4/5 sm:w-3/4 aspect-auto border-primary"
+          />
+        </div>
       </div>
     </section>
   );
