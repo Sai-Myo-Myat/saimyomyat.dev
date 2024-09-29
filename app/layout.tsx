@@ -19,6 +19,21 @@ export const metadata: Metadata = {
     title: { template: "%s | Sai Myo Myat", default: "Sai Myo Myat" },
     description:
       "I am a full-stack developer with over two years of experiences in developing createive websites and mobile apps",
+    images: {
+      url: `${process.env.NEXT_PUBLIC_URL}/me.jpg`,
+      width: "300px",
+      height: "300px",
+    },
+  },
+  twitter: {
+    title: { template: "%s | Sai Myo Myat", default: "Sai Myo Myat" },
+    description:
+      "I am a full-stack developer with over two years of experiences in developing createive websites and mobile apps",
+    images: {
+      url: `${process.env.NEXT_PUBLIC_URL}/me.jpg`,
+      width: "300px",
+      height: "300px",
+    },
   },
 };
 
