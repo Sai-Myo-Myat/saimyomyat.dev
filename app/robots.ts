@@ -7,8 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap:
-      `${process.env.NEXT_PUBLIC_URL}/sitemap` ||
-      "https://saimyomyat.dev/sitemap",
+    sitemap: `/sitemap`,
   };
 }

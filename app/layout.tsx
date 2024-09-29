@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description:
       "I am a full-stack developer with over two years of experiences in developing createive websites and mobile apps",
     images: {
-      url: `${process.env.NEXT_PUBLIC_URL}/me.jpg`,
+      url: `/me.jpg`,
       width: "300px",
       height: "300px",
     },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     description:
       "I am a full-stack developer with over two years of experiences in developing createive websites and mobile apps",
     images: {
-      url: `${process.env.NEXT_PUBLIC_URL}/me.jpg`,
+      url: `/me.jpg`,
       width: "300px",
       height: "300px",
     },
