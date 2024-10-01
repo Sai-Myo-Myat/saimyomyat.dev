@@ -1,5 +1,3 @@
-"use client";
-
 import BlogCard from "@/components/blogs/blog-card";
 import { cn } from "@/lib/utils";
 
