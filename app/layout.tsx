@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "Sai Myo Myat",
     type: "website",
-    url: "https://portfolio-seven-kohl-54.vercel.app",
+    url: `${process.env.NEXT_PUBLIC_URL}`,
     title: {
       template: "%s | Sai Myo Myat",
       default: "Sai Myo Myat - A Full-stack Developer",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     description:
       "I am a full-stack developer with over two years of experiences in developing createive websites and mobile apps",
     images: {
-      url: `https://portfolio-seven-kohl-54.vercel.app/me.jpg`,
+      url: `${process.env.NEXT_PUBLIC_URL}/saimyomyat-og.jpg`,
       width: "300px",
       height: "300px",
       alt: "Sai Myo Myat's profile",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     description:
       "I am a full-stack developer with over two years of experiences in developing createive websites and mobile apps",
     images: {
-      url: `https://portfolio-seven-kohl-54.vercel.app/me.jpg`,
+      url: `${process.env.NEXT_PUBLIC_URL}/saimyomyat-og.jpg`,
       width: "300px",
       height: "300px",
       alt: "Sai Myo Myat's profile",
