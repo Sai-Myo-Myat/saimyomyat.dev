@@ -1,14 +1,23 @@
-import React, { HTMLAttributeAnchorTarget, ReactNode } from "react";
+import React, {
+  HTMLAttributeAnchorTarget,
+  HtmlHTMLAttributes,
+  ReactNode,
+} from "react";
 
-interface Props {
+interface Props extends HtmlHTMLAttributes<HTMLAnchorElement> {
   icon: ReactNode;
   url: string;
   target?: HTMLAttributeAnchorTarget;
 }
 
-const LinkIcon: React.FC<Props> = ({ icon, url, target = "_blank" }) => {
+const LinkIcon: React.FC<Props> = ({
+  icon,
+  url,
+  target = "_blank",
+  ...props
+}) => {
   return (
-    <a href={url} target={target}>
+    <a href={url} target={target} {...props}>
       {icon}
     </a>
   );

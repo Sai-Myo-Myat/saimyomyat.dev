@@ -10,6 +10,7 @@ const ContactSection = () => {
           <a
             className="font-bold"
             href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
+            aria-labelledby="Contact me"
           >
             Contact me!
           </a>

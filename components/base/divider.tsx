@@ -14,6 +14,7 @@ const Divider: React.FC<Props> = ({ type, className }) => {
         className,
         type === "dashed" && "border-dashed"
       )}
+      aria-label="Divider"
     ></div>
   );
 };

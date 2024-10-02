@@ -12,7 +12,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
       <div className="bg-primary w-full h-44 rounded-md"></div>
       <div className="flex items-center justify-between">
         <div className="cursor-pointer my-4 flex gap-2">
-          <p className="font-bold">{project.title}</p>
+          <h4 className="font-bold">{project.title}</h4>
           <ExternalLink size={18} className="text-blue-500" />
         </div>
         <GithubIcon size={20} />
