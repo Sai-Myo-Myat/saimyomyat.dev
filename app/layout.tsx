@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "I am a full-stack developer with over two years of experiences in developing createive websites and mobile apps",
   creator: "Sai Myo Myat",
-  keywords: ["Next.js", "React", "JavaScript", "Portfolio", "Sai Myo Myat"],
+  keywords: ["Sai Myo Myat", "Front-end developer", "Nextjs Portfolio"],
   formatDetection: {
     email: true,
     telephone: true,

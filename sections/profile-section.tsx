@@ -63,7 +63,7 @@ const ProfileSection = () => {
         <div className="sm:flex-1 w-full min:h-[30vh] flex items-center justify-center sm:justify-end">
           <Image
             src={"/me.jpg"}
-            alt="my-profile-picture"
+            alt="This is a picture of me!"
             width={400}
             height={340}
             className="rounded-md w-4/5 sm:w-3/4 aspect-auto border-primary"
