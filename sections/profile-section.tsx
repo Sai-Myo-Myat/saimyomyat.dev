@@ -48,10 +48,10 @@ const ProfileSection = () => {
             </span>
             .
           </p>
-          <a href="/cv.pdf" target="_blank" className="max-w-max">
+          <a href="/resume.pdf" target="_blank" className="max-w-max">
             <div className="flex items-center gap-2 my-2">
               <span className="hover:underline hover:text-primary font-semibold">
-                Download CV.
+                Download Resume.
               </span>
               <HardDriveDownload
                 size={18}
