@@ -16,7 +16,7 @@ const Footer = () => {
       />
       <LinkIcon
         icon={<h4 className="font-extrabold">Up Work</h4>}
-        url="https://www.upwork.com/freelancers/~018080e88edad80076"
+        url="https://www.upwork.com/freelancers/~018080e88edad80076?mp_source=share"
         aria-label="Upwork account"
       />
     </footer>
