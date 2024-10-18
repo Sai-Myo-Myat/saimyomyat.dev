@@ -1,38 +1,64 @@
-# ultimate_portfolio
-This is my ultimate portfolio with Nextjs.
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sai Myo Myat Portfolio
 
-## Getting Started
+![saimyomyat dev](https://github.com/user-attachments/assets/8e6a53dd-8330-4ec9-b555-00d28aaf336b)
+![ts](https://badgen.net/badge/Built%20With/TypeScript/blue) ![vercel](https://badgen.net/badge/Deploy%20With/Vercel/black)
 
-First, run the development server:
+My portfolio website developed with Next.JS (App router) and TypeScript. Tailwind CSS and GSAP is used for styling and animations.
+
+## Features
+
+- Responsive Design 📱💻
+- Fully Accessible ♿️
+- SEO Friendly 🔎
+
+## Tech Stack
+
+**Frontend** - [NextJS](https://nextjs.org/), [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/)  
+**Styling** - [Tailwind CSS](https://tailwindcss.com/)  
+**Animations** - [GSAP](https://greensock.com/)  
+**Design & Prototype** - [Figma](https://figma.com/)  
+**Deployment** - [Vercel](https://vercel.com/)
+
+ ## Lighthouse Score
+
+<p align="center">
+  <a href="https://pagespeed.web.dev/analysis/https-saimyomyat-dev/8e08bqi1ze?form_factor=desktop">
+    <img width="710" alt="Sai Myo Myat Portfolio Website Lighthouse Score" src="https://github.com/user-attachments/assets/eaad449f-5820-4235-acdd-e0942785e4d8">
+  <a>
+</p>
+
+## Running Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Sai-Myo-Myat/saimyomyat.dev.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd saimyomyat.dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Remove remote origin
 
-## Learn More
+```bash
+git remote remove origin
+```
 
-To learn more about Next.js, take a look at the following resources:
+Install dependencies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+yarn install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Start the server
 
-## Deploy on Vercel
+```bash
+yarn dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [@saimyomyat](https://saimyomyat.dev)
