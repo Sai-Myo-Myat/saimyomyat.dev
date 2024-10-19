@@ -10,6 +10,8 @@ My portfolio website developed with Next.JS (App router) and TypeScript. Tailwin
 - Responsive Design 📱💻
 - Fully Accessible ♿️
 - SEO Friendly 🔎
+- Progressive web app 📱
+- Preview on social media share 📱💻
 
 ## Tech Stack
 
