@@ -1,5 +1,5 @@
 "use client";
-import { useBlogs } from "@/api/useBlogs";
+import { useBlogs } from "@/api/blogs";
 import ContinueButton from "@/components/base/continue-button";
 import BlogCard from "@/components/blogs/blog-card";
 import { cn } from "@/lib/utils";

@@ -3,7 +3,7 @@
 import BlogCard from "@/components/blogs/blog-card";
 import { cn } from "@/lib/utils";
 import { Bree_Serif } from "next/font/google";
-import { useBlogs } from "../../api/useBlogs";
+import { useBlogs } from "../../api/blogs";
 
 const bree_serif = Bree_Serif({ weight: "400", subsets: ["latin"] });
 
@@ -34,7 +34,7 @@ export default function BlogListPage() {
       </div>
       <div className="my-4 flex flex-col gap-4">
         {blogs?.map((blog) => (
-          <BlogCard key={blog.id} blog={blog} />
+          <BlogCard key={blog.id} blog={blog} href={`/blogs/${blog.slug}`} />
         ))}
       </div>
     </div>
