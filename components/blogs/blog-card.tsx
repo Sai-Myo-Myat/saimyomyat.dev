@@ -13,9 +13,9 @@ const BlogCard: React.FC<Props> = ({ blog }) => {
         <p className="text-muted-foreground italic text-xs">{blog.date}</p>
         <ClickableH3 className="my-2 font-semibold">{blog.title}</ClickableH3>
       </div>
-      {blog.tags && (
-        <div className="flex flex-wrap gap-2 my-2">
-          {blog.tags.map((tag) => {
+      {blog.meta_data?.tags && (
+        <div className="flex flex-wrap gap-2 my-0.5">
+          {blog.meta_data.tags.map((tag) => {
             return <Tag key={tag} text={tag} />;
           })}
         </div>
