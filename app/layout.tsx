@@ -1,3 +1,5 @@
+import CustomCursor from "@/components/base/custom-cursor";
+import Footer from "@/sections/footer";
 import { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
@@ -63,8 +65,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <main>
-          <Providers>{children}</Providers>
+        <main className="relative">
+          <CustomCursor />
+          <Providers>
+            <div className="max-w-screen-lg mx-auto px-4 sm:px-6">
+              <div className="min-h-screen"> {children}</div>
+              <Footer />
+            </div>
+          </Providers>
         </main>
       </body>
     </html>

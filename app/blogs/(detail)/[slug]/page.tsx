@@ -1,6 +1,7 @@
 "use client";
 
 import { useBlog } from "@/api/blogs";
+import Loader from "@/components/Loader";
 import "./detail.css";
 
 interface PageProps {
@@ -13,7 +14,7 @@ const BlogDetail = ({ params }: PageProps) => {
   const slug = params.slug;
   const { data: blog, isLoading } = useBlog(slug);
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Loader>Loading...</Loader>;
   }
 
   if (!blog) {
@@ -21,14 +22,15 @@ const BlogDetail = ({ params }: PageProps) => {
   }
 
   return (
-    <div>
+    <>
+      <Loader>{blog.title}</Loader>
       <h2 className="text-primary">{blog.title}</h2>
       <p className="text-sm text-muted">{`( ${blog.date} )`}</p>
       <div
         className="py-8"
         dangerouslySetInnerHTML={{ __html: blog.content }}
       />
-    </div>
+    </>
   );
 };
 

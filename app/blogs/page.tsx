@@ -1,5 +1,6 @@
 "use client";
 
+import Loader from "@/components/Loader";
 import BlogCard from "@/components/blogs/blog-card";
 import { cn } from "@/lib/utils";
 import { Bree_Serif } from "next/font/google";
@@ -11,7 +12,11 @@ export default function BlogListPage() {
   const { data: blogs, isLoading, error } = useBlogs();
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return (
+      <Loader>
+        <span>{`saimyomyat.blogs`}</span>
+      </Loader>
+    );
   }
 
   if (error) {
@@ -19,7 +24,10 @@ export default function BlogListPage() {
   }
 
   return (
-    <div>
+    <>
+      <Loader>
+        <span>{`saimyomyat.blogs`}</span>
+      </Loader>
       <div className="flex gap-2">
         <h1 className={cn(bree_serif.className, "text-primary font-extrabold")}>
           {`Sai Myo Myat's Blogs`}
@@ -37,6 +45,6 @@ export default function BlogListPage() {
           <BlogCard key={blog.id} blog={blog} href={`/blogs/${blog.slug}`} />
         ))}
       </div>
-    </div>
+    </>
   );
 }
