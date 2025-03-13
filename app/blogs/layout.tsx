@@ -5,7 +5,7 @@ import NavLayout from "@/components/nav/nav-layout";
 import { ArrowLeftCircle } from "lucide-react";
 import { PropsWithChildren } from "react";
 
-export default function Layout({ children }: PropsWithChildren) {
+export default function BlogListLayout({ children }: PropsWithChildren) {
   return (
     <div className="relative">
       <CustomCursor />
