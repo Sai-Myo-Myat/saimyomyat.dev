@@ -1,0 +1,13 @@
+h2 {
+    margin-top: 14px;
+}
+
+code {
+    background-color: #232222;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 0.9em;
+    margin: 4px;
+    padding: 14px;
+    width: 100%;
+}

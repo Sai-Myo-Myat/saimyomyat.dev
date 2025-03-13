@@ -1,3 +1,4 @@
+import { markdownToHtml } from "@/lib/markdownToHtml";
 import { BlogType } from "@/types/blogs";
 import { useQuery } from "@tanstack/react-query";
 import { useQueryFunctionWrapper } from "./base";
@@ -20,7 +21,11 @@ const fetchBlog = async (slug: string) => {
     `${process.env.NEXT_PUBLIC_CMS_BASE}/blogs?filters[slug][$eq]=${slug}`
   );
   const result = await response.json();
-  return result.data[0] as BlogType;
+  const data = {
+    ...result.data[0],
+    content: await markdownToHtml(result.data[0].content),
+  };
+  return data as BlogType;
 };
 
 export function useBlog(slug: string) {

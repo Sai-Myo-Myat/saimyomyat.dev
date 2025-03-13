@@ -1,6 +1,7 @@
 "use client";
 
 import { useBlog } from "@/api/blogs";
+import "./detail.css";
 
 interface PageProps {
   params: {
@@ -21,9 +22,12 @@ const BlogDetail = ({ params }: PageProps) => {
 
   return (
     <div>
-      <h1>{blog.title}</h1>
-      <p>{blog.date}</p>
-      <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+      <h2 className="text-primary">{blog.title}</h2>
+      <p className="text-sm text-muted">{`( ${blog.date} )`}</p>
+      <div
+        className="py-8"
+        dangerouslySetInnerHTML={{ __html: blog.content }}
+      />
     </div>
   );
 };
