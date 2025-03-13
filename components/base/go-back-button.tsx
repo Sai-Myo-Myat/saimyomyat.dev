@@ -2,14 +2,18 @@
 
 import Button from "@/components/ui-overwrite/button";
 import { useRouter } from "next/navigation";
-import { useCallback } from "react";
+import React, { PropsWithChildren, useCallback } from "react";
 
-const GoBack = () => {
+const GoBack: React.FC<PropsWithChildren> = ({ children }) => {
   const router = useRouter();
 
   const onGoBack = useCallback(() => {
     router.back();
   }, [router]);
+
+  if (children) {
+    return <div onClick={onGoBack}>{children}</div>;
+  }
 
   return <Button onClick={onGoBack}>Go Back</Button>;
 };
