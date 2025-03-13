@@ -2,6 +2,7 @@
 
 import Loader from "@/components/Loader";
 import BlogCard from "@/components/blogs/blog-card";
+import ContentNotFound from "@/components/content-not-found";
 import { cn } from "@/lib/utils";
 import { Bree_Serif } from "next/font/google";
 import { useBlogs } from "../../api/blogs";
@@ -19,8 +20,8 @@ export default function BlogListPage() {
     );
   }
 
-  if (error) {
-    return <p>Error: {error.message}</p>;
+  if (error || !blogs || blogs?.length === 0) {
+    return <ContentNotFound />;
   }
 
   return (

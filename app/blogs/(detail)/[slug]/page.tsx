@@ -2,6 +2,7 @@
 
 import { useBlog } from "@/api/blogs";
 import Loader from "@/components/Loader";
+import ContentNotFound from "@/components/content-not-found";
 import "./detail.css";
 
 interface PageProps {
@@ -18,7 +19,7 @@ const BlogDetail = ({ params }: PageProps) => {
   }
 
   if (!blog) {
-    return <div>Blog not found</div>;
+    return <ContentNotFound />;
   }
 
   return (
