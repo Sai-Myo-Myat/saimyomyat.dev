@@ -17,7 +17,7 @@ const BlogsSection = () => {
         {`"Sharing is not about giving up something, it’s about gaining more." — Unknown`}
       </p>
       <div className="my-4 flex flex-col gap-4">
-        {blogs?.map((blog) => (
+        {blogs?.slice(0, 3)?.map((blog) => (
           <BlogCard key={blog.id} blog={blog} />
         ))}
       </div>
