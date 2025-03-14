@@ -5,7 +5,9 @@ import { useQueryFunctionWrapper } from "./base";
 import { blogKeys } from "./query-keys/blogs";
 
 export const fetchBlogs = async () => {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_CMS_BASE}/blogs`);
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_CMS_BASE}/blogs?sort=date:desc`
+  );
   const result = await response.json();
   return result.data as BlogType[];
 };
