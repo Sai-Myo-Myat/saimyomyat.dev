@@ -6,6 +6,7 @@ import ContentNotFound from "@/components/content-not-found";
 import { cn } from "@/lib/utils";
 import { Bree_Serif } from "next/font/google";
 import { useBlogs } from "../../api/blogs";
+import NoData from "../no-data";
 
 const bree_serif = Bree_Serif({ weight: "400", subsets: ["latin"] });
 
@@ -16,7 +17,7 @@ export default function BlogListView() {
     return <ContentLoading>Loading...</ContentLoading>;
   }
 
-  if (error || !blogs || blogs?.length === 0) {
+  if (error) {
     return <ContentNotFound />;
   }
 
@@ -35,9 +36,13 @@ export default function BlogListView() {
         </p>
       </div>
       <div className="my-4 flex flex-col gap-4">
-        {blogs?.map((blog) => (
-          <BlogCard key={blog.id} blog={blog} href={`/blogs/${blog.slug}`} />
-        ))}
+        {blogs?.length ? (
+          blogs?.map((blog) => (
+            <BlogCard key={blog.id} blog={blog} href={`/blogs/${blog.slug}`} />
+          ))
+        ) : (
+          <NoData />
+        )}
       </div>
     </>
   );

@@ -2,6 +2,7 @@
 import { useBlogs } from "@/api/blogs";
 import ContinueButton from "@/components/base/continue-button";
 import BlogCard from "@/components/blogs/blog-card";
+import NoData from "@/components/no-data";
 import { cn } from "@/lib/utils";
 
 import { Playpen_Sans } from "next/font/google";
@@ -17,9 +18,19 @@ const BlogsSection = () => {
         {`"Sharing is not about giving up something, it’s about gaining more." — Unknown`}
       </p>
       <div className="my-4 flex flex-col gap-4">
-        {blogs?.slice(0, 3)?.map((blog) => (
-          <BlogCard key={blog.id} blog={blog} />
-        ))}
+        {blogs?.length ? (
+          blogs
+            ?.slice(0, 3)
+            ?.map((blog) => (
+              <BlogCard
+                key={blog.id}
+                blog={blog}
+                href={`/blogs/${blog.slug}`}
+              />
+            ))
+        ) : (
+          <NoData />
+        )}
       </div>
       <ContinueButton href="/blogs" label="Read more blogs" />
     </section>
