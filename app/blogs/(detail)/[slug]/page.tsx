@@ -1,9 +1,9 @@
 "use client";
 
 import { useBlog } from "@/api/blogs";
-import Loader from "@/components/Loader";
 import ContentLoading from "@/components/content-loading";
 import ContentNotFound from "@/components/content-not-found";
+import Loader from "@/components/loader";
 import "./detail.css";
 
 interface PageProps {

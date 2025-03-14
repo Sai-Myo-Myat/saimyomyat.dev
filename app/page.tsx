@@ -1,4 +1,4 @@
-import Loader from "@/components/Loader";
+import Loader from "@/components/loader";
 import HeaderNav from "@/components/nav/header-nav";
 import BlogsSection from "@/sections/blogs-section";
 import ContactSection from "@/sections/contact-section";
