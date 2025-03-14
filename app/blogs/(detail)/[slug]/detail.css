@@ -1,4 +1,4 @@
-h2 {
+h1, h2, h3 {
     margin-top: 14px;
 }
 
@@ -10,4 +10,9 @@ code {
     margin: 4px;
     padding: 14px;
     width: 100%;
+    overflow: auto;
+}
+
+p {
+    padding: 10px 0px;
 }
