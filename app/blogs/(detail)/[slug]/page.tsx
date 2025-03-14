@@ -1,4 +1,4 @@
-import { fetchBlog } from "@/api/cms-blogs";
+import { fetchBlog } from "@/api/blogs";
 import { BlogDetailPageProps } from "@/types/blogs";
 import "./detail.css";
 import HydratedBlogDetail from "./hydrated-blog-detail";

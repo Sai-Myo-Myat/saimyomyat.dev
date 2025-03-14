@@ -1,8 +1,8 @@
 ---
 title: "saimyomyat.dev"
-slug: "about-this-slug"
+slug: "about-this-site"
+date: "2025-03-1"
 meta_data: {tags: ["Next.js"]}
-
 ---
 
 ![saimyomyat dev](http://localhost:1337/uploads/portfolio_og_img_078a680d6d.jpg)
