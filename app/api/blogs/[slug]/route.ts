@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import { NextResponse } from "next/server";
 import path from "path";
 
-const blogDir = path.join(process.cwd(), "contents/blogs");
+const blogDir = path.join(process.cwd(), "public/contents/blogs");
 
 export async function GET(
   request: Request,
