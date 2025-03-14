@@ -4,6 +4,7 @@ export interface BlogType {
   slug: string;
   date: string;
   content: string;
+  file?: string;
   meta_data: {
     tags: string[];
   };
