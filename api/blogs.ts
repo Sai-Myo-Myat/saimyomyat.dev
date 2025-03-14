@@ -2,8 +2,9 @@ import { markdownToHtml } from "@/lib/markdownToHtml";
 import { BlogType } from "@/types/blogs";
 import { useQuery } from "@tanstack/react-query";
 import { useQueryFunctionWrapper } from "./base";
+import { blogKeys } from "./query-keys/blogs";
 
-const fetchBlogs = async () => {
+export const fetchBlogs = async () => {
   const response = await fetch(`${process.env.NEXT_PUBLIC_CMS_BASE}/blogs`);
   const result = await response.json();
   return result.data as BlogType[];
@@ -11,7 +12,7 @@ const fetchBlogs = async () => {
 
 export function useBlogs() {
   return useQuery({
-    queryKey: ["blogs"],
+    queryKey: blogKeys.list(),
     queryFn: fetchBlogs,
   });
 }

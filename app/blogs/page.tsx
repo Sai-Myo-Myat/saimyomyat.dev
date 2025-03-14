@@ -1,12 +1,12 @@
-import Loader from "@/components/Loader";
-import BlogListView from "@/components/blogs/blog-list-view";
+import Loader from "@/components/loader";
+import HydratedBlogList from "./hydrated-blog-list";
 export default function BlogListPage() {
   return (
     <>
       <Loader>
         <span>{`saimyomyat.blogs`}</span>
       </Loader>
-      <BlogListView />
+      <HydratedBlogList />
     </>
   );
 }
