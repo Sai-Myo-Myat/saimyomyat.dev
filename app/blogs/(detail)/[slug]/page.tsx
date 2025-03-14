@@ -1,13 +1,20 @@
+import { fetchBlog } from "@/api/blogs";
+import { BlogDetailPageProps } from "@/types/blogs";
 import "./detail.css";
 import HydratedBlogDetail from "./hydrated-blog-detail";
 
-interface PageProps {
-  params: {
-    slug: string;
-  };
+export async function generateMetadata({ params }: BlogDetailPageProps) {
+  const slug = params.slug;
+  const blog = await fetchBlog(slug);
+
+  if (blog) {
+    return {
+      title: `${blog.title}`,
+    };
+  }
 }
 
-const BlogDetail = ({ params }: PageProps) => {
+const BlogDetail = ({ params }: BlogDetailPageProps) => {
   return (
     <>
       <HydratedBlogDetail params={params} />
