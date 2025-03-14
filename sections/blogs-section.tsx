@@ -1,16 +1,22 @@
 "use client";
-import { useBlogs } from "@/api/blogs";
+import { fetchBlogs } from "@/api/blogs";
+import { blogKeys } from "@/api/query-keys/blogs";
 import ContinueButton from "@/components/base/continue-button";
 import BlogCard from "@/components/blogs/blog-card";
 import NoData from "@/components/no-data";
 import { cn } from "@/lib/utils";
+import { useQuery } from "@tanstack/react-query";
 
 import { Playpen_Sans } from "next/font/google";
 
 const playpen_sans = Playpen_Sans({ weight: "400", subsets: ["latin"] });
 
 const BlogsSection = () => {
-  const { data: blogs } = useBlogs();
+  const { data: blogs } = useQuery({
+    queryKey: blogKeys.list(),
+    queryFn: fetchBlogs,
+  });
+
   return (
     <section id="blogs" className="h-[70vh] py-20">
       <h1 className="py-1">Featured Blogs</h1>
@@ -32,7 +38,9 @@ const BlogsSection = () => {
           <NoData />
         )}
       </div>
-      <ContinueButton href="/blogs" label="Read more blogs" />
+      {blogs && blogs?.length > 3 && (
+        <ContinueButton href="/blogs" label="Read more blogs" />
+      )}
     </section>
   );
 };

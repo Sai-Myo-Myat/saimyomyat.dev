@@ -1,17 +1,23 @@
 "use client";
 
+import { fetchBlogs } from "@/api/blogs";
+import { blogKeys } from "@/api/query-keys/blogs";
 import BlogCard from "@/components/blogs/blog-card";
 import ContentLoading from "@/components/content-loading";
 import ContentNotFound from "@/components/content-not-found";
 import { cn } from "@/lib/utils";
+import { useQuery } from "@tanstack/react-query";
 import { Bree_Serif } from "next/font/google";
-import { useBlogs } from "../../api/cms-blogs";
 import NoData from "../no-data";
 
 const bree_serif = Bree_Serif({ weight: "400", subsets: ["latin"] });
 
 export default function BlogListView() {
-  const { data: blogs, isLoading, error } = useBlogs();
+  const {
+    data: blogs,
+    isLoading,
+    error,
+  } = useQuery({ queryKey: blogKeys.list(), queryFn: fetchBlogs });
 
   if (isLoading) {
     return <ContentLoading>Loading...</ContentLoading>;

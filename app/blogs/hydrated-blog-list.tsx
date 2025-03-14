@@ -1,4 +1,4 @@
-import { fetchBlogs } from "@/api/cms-blogs";
+import { fetchBlogs } from "@/api/blogs";
 import getQueryClient from "@/api/query-client";
 import { blogKeys } from "@/api/query-keys/blogs";
 import BlogListView from "@/components/blogs/blog-list-view";
