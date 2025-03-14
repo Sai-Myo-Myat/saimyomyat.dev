@@ -13,6 +13,8 @@ export async function GET(
   const { slug } = params;
   const filePath = path.join(blogDir, `${slug}.md`);
 
+  console.log("filePath & slug", filePath, "&", slug);
+
   if (!fs.existsSync(filePath)) {
     return NextResponse.json({ error: "Blog not found" }, { status: 404 });
   }
