@@ -5,7 +5,7 @@ import ContentLoading from "@/components/content-loading";
 import ContentNotFound from "@/components/content-not-found";
 import { cn } from "@/lib/utils";
 import { Bree_Serif } from "next/font/google";
-import { useBlogs } from "../../api/blogs";
+import { useBlogs } from "../../api/cms-blogs";
 import NoData from "../no-data";
 
 const bree_serif = Bree_Serif({ weight: "400", subsets: ["latin"] });

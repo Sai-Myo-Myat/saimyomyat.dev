@@ -1,5 +1,5 @@
 import { useQueryFunctionWrapper } from "@/api/base";
-import { fetchBlog } from "@/api/blogs";
+import { fetchBlog } from "@/api/cms-blogs";
 import getQueryClient from "@/api/query-client";
 import { blogKeys } from "@/api/query-keys/blogs";
 import BlogDetailView from "@/components/blogs/blog-detail-view";
