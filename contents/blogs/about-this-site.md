@@ -5,7 +5,7 @@ date: "2025-03-1"
 meta_data: {tags: ["Next.js"]}
 ---
 
-![saimyomyat dev](http://localhost:1337/uploads/portfolio_og_img_078a680d6d.jpg)
+![saimyomyat dev](/saimyomyat-og.jpg)
 
 
 My portfolio website developed with Next.JS (App router) and TypeScript. Tailwind CSS and GSAP is used for styling and animations.
@@ -17,6 +17,7 @@ My portfolio website developed with Next.JS (App router) and TypeScript. Tailwin
 - SEO Friendly 🔎
 - Progressive web app 📱
 - Preview on social media share 📱💻
+- Markdown Content 📰
 
 ## Tech Stack
 
@@ -24,7 +25,8 @@ My portfolio website developed with Next.JS (App router) and TypeScript. Tailwin
 **Styling** - [Tailwind CSS](https://tailwindcss.com/)  
 **Animations** - [GSAP](https://greensock.com/)  
 **Design & Prototype** - [Figma](https://figma.com/)  
-**Deployment** - [Vercel](https://vercel.com/)
+**Backend** - [Strapi Headless CMS](https://strapi.io/)  
+**Deployment** - [Vercel](https://vercel.com/), [Render](https://render.com/)
 
 ## Running Locally
 

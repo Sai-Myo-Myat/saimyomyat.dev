@@ -13,6 +13,17 @@ code {
     overflow: auto;
 }
 
+ul li {
+    margin-left: 14px;
+    /* list-style-type: disc; */
+    font-weight: 700;
+}
+
+strong {
+    margin-left: 14px;
+    font-weight: 700;
+}
+
 p {
     padding: 10px 0px;
 }
