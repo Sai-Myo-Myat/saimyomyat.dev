@@ -2,6 +2,7 @@
 
 import { useBlog } from "@/api/blogs";
 import Loader from "@/components/Loader";
+import ContentLoading from "@/components/content-loading";
 import ContentNotFound from "@/components/content-not-found";
 import "./detail.css";
 
@@ -13,12 +14,13 @@ interface PageProps {
 
 const BlogDetail = ({ params }: PageProps) => {
   const slug = params.slug;
-  const { data: blog, isLoading } = useBlog(slug);
+  const { data: blog, isLoading, error } = useBlog(slug);
+
   if (isLoading) {
-    return <Loader>Loading...</Loader>;
+    return <ContentLoading>Loading...</ContentLoading>;
   }
 
-  if (!blog) {
+  if (error || !blog) {
     return <ContentNotFound />;
   }
 
