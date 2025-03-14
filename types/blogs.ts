@@ -8,3 +8,9 @@ export interface BlogType {
     tags: string[];
   };
 }
+
+export interface BlogDetailPageProps {
+  params: {
+    slug: string;
+  };
+}

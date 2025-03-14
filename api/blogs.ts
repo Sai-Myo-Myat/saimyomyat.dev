@@ -17,7 +17,7 @@ export function useBlogs() {
   });
 }
 
-const fetchBlog = async (slug: string) => {
+export const fetchBlog = async (slug: string) => {
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_CMS_BASE}/blogs?filters[slug][$eq]=${slug}`
   );
@@ -31,7 +31,7 @@ const fetchBlog = async (slug: string) => {
 
 export function useBlog(slug: string) {
   return useQuery({
-    queryKey: ["blog-detail"],
+    queryKey: blogKeys.detail(slug),
     queryFn: useQueryFunctionWrapper<string, BlogType>(fetchBlog, slug),
   });
 }
