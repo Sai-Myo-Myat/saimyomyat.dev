@@ -38,7 +38,7 @@ const BlogsSection = () => {
           <NoData />
         )}
       </div>
-      {blogs && blogs?.length > 3 && (
+      {blogs && blogs?.length > 1 && (
         <ContinueButton href="/blogs" label="Read more blogs" />
       )}
     </section>
