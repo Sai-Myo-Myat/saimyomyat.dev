@@ -8,7 +8,7 @@ const blogDir = path.join(process.cwd(), "contents/blogs");
 export async function GET() {
   if (!fs.existsSync(blogDir)) {
     return NextResponse.json(
-      { error: "No blog directory found" },
+      { error: "No blogs directory found" },
       { status: 404 }
     );
   }

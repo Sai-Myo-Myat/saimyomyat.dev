@@ -14,7 +14,7 @@ export async function GET(
   const filePath = path.join(blogDir, `${slug}.md`);
 
   if (!fs.existsSync(filePath)) {
-    return NextResponse.json({ error: "Post not found" }, { status: 404 });
+    return NextResponse.json({ error: "Blog not found" }, { status: 404 });
   }
 
   const fileContents = fs.readFileSync(filePath, "utf8");
