@@ -12,14 +12,16 @@ My portfolio website developed with Next.JS (App router) and TypeScript. Tailwin
 - SEO Friendly 🔎
 - Progressive web app 📱
 - Preview on social media share 📱💻
+- Markdown Content 📰
 
 ## Tech Stack
 
 **Frontend** - [NextJS](https://nextjs.org/), [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/)  
 **Styling** - [Tailwind CSS](https://tailwindcss.com/)  
 **Animations** - [GSAP](https://greensock.com/)  
-**Design & Prototype** - [Figma](https://figma.com/)  
-**Deployment** - [Vercel](https://vercel.com/)
+**Design & Prototype** - [Figma](https://figma.com/) 
+**Backend** - [Strapi Headless CMS](https://strapi.io/)  
+**Deployment** - [Vercel](https://vercel.com/), [Render](https://render.com/)
 
  ## Lighthouse Score
 
