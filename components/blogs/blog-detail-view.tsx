@@ -1,8 +1,8 @@
 "use client";
 
-import { useQueryFunctionWrapper } from "@/api/base";
-import { fetchBlog } from "@/api/blogs";
-import { blogKeys } from "@/api/query-keys/blogs";
+import { useQueryFunctionWrapper } from "@/api-base/base";
+import { fetchBlog } from "@/api-base/blogs";
+import { blogKeys } from "@/api-base/query-keys/blogs";
 import ContentLoading from "@/components/content-loading";
 import ContentNotFound from "@/components/content-not-found";
 import { BlogDetailPageProps } from "@/types/blogs";

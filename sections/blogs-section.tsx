@@ -1,6 +1,6 @@
 "use client";
-import { fetchBlogs } from "@/api/blogs";
-import { blogKeys } from "@/api/query-keys/blogs";
+import { fetchBlogs } from "@/api-base/blogs";
+import { blogKeys } from "@/api-base/query-keys/blogs";
 import ContinueButton from "@/components/base/continue-button";
 import BlogCard from "@/components/blogs/blog-card";
 import NoData from "@/components/no-data";

@@ -1,6 +1,6 @@
-import { fetchBlogs } from "@/api/blogs";
-import getQueryClient from "@/api/query-client";
-import { blogKeys } from "@/api/query-keys/blogs";
+import { fetchBlogs } from "@/api-base/blogs";
+import getQueryClient from "@/api-base/query-client";
+import { blogKeys } from "@/api-base/query-keys/blogs";
 import BlogListView from "@/components/blogs/blog-list-view";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 

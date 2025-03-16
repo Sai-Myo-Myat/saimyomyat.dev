@@ -1,7 +1,7 @@
 "use client";
 
-import { fetchBlogs } from "@/api/blogs";
-import { blogKeys } from "@/api/query-keys/blogs";
+import { fetchBlogs } from "@/api-base/blogs";
+import { blogKeys } from "@/api-base/query-keys/blogs";
 import BlogCard from "@/components/blogs/blog-card";
 import ContentLoading from "@/components/content-loading";
 import ContentNotFound from "@/components/content-not-found";
