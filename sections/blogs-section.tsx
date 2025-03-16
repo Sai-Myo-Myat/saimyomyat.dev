@@ -29,7 +29,7 @@ const BlogsSection = () => {
             ?.slice(0, 3)
             ?.map((blog) => (
               <BlogCard
-                key={blog.id}
+                key={blog.slug}
                 blog={blog}
                 href={`/blogs/${blog.slug}`}
               />

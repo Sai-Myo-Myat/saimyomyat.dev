@@ -44,7 +44,7 @@ export default function BlogListView() {
       <div className="my-4 flex flex-col gap-4">
         {blogs?.length ? (
           blogs?.map((blog) => (
-            <BlogCard key={blog.id} blog={blog} href={`/blogs/${blog.slug}`} />
+            <BlogCard key={blog.slug} blog={blog} href={`/blogs/${blog.slug}`} />
           ))
         ) : (
           <NoData />
