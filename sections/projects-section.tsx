@@ -13,21 +13,25 @@ const playpen_sans = Playpen_Sans({ weight: "400", subsets: ["latin"] });
 const projects: ProjectType[] = [
   {
     id: 1,
-    title: "saimyomyat.com",
+    title: "saimyomyat.dev",
+    href: `${process.env.NEXT_PUBLIC_URL}/blogs/about-this-site`,
+    source: "https://github.com/Sai-Myo-Myat/saimyomyat.dev",
+    img: "/saimyomyat-og.jpg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. consectetur adipisicing elit. Officia.",
+      "This is the site you are currently viewing. It is built with Next.js, Tailwind CSS, and Vercel. You can read more about this site by clicking the link iocn.",
+    tags: ["Next.js", "Tailwind CSS", "Vercel"],
+    target: "_parent",
   },
   {
     id: 2,
-    title: "saimyomyat.com",
+    title: "option-select",
+    href: `https://www.npmjs.com/package/option-select`,
+    source: "https://github.com/Sai-Myo-Myat/option-select",
+    img: "/option-select.jpg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. consectetur adipisicing elit. Officia.",
-  },
-  {
-    id: 3,
-    title: "saimyomyat.com",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, sit? Impedit odio doloremque voluptatum.",
+      "A headless option selection library for JavaScript front-end frameworks like React (and more later). Supports hierarchical data structures and allows selection tracking with full control.",
+    tags: ["React", "TypeScript", "Headless UI"],
+    target: "_blank",
   },
 ];
 
