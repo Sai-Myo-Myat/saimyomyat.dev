@@ -27,8 +27,6 @@ export default function BlogListView() {
     return <ContentNotFound />;
   }
 
-  console.log("blogs", blogs);
-
   return (
     <>
       <div className="flex gap-2">

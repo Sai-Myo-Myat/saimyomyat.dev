@@ -18,7 +18,6 @@ export async function GET() {
   const posts = files
     .map((file) => {
       const fileContent = fs.readFileSync(path.join(blogDir, file), "utf8");
-      console.log("each file", file);
       const { data } = matter(fileContent);
       return { ...data, file } as BlogType; // Include metadata from the Markdown file
     })
