@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   applicationName: "Sai Myo Myat",
   description:
-    "I am a full-stack developer with over two years of experiences in developing createive websites and mobile apps",
+    "Sai Myo Myat is a full-stack developer with over two years of experiences in developing createive websites and mobile apps",
   creator: "Sai Myo Myat",
   authors: [{ name: "Sai Myo Myat", url: process.env.NEXT_PUBLIC_URL }],
   keywords: ["Sai Myo Myat", "Front-end developer", "Nextjs Portfolio"],
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       default: "Sai Myo Myat - A Full-stack Developer",
     },
     description:
-      "I am a full-stack developer with over two years of experiences in developing createive websites and mobile apps",
+      "Sai Myo Myat is a full-stack developer with over two years of experiences in developing createive websites and mobile apps",
     images: {
       url: `${process.env.NEXT_PUBLIC_URL}/saimyomyat-og.jpg`,
       width: "300px",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
       default: "Sai Myo Myat - A Full-stack Developer",
     },
     description:
-      "I am a full-stack developer with over two years of experiences in developing createive websites and mobile apps",
+      "Sai Myo Myat is a full-stack developer with over two years of experiences in developing createive websites and mobile apps",
     images: {
       url: `${process.env.NEXT_PUBLIC_URL}/saimyomyat-og.jpg`,
       width: "300px",
