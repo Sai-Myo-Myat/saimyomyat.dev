@@ -18,7 +18,7 @@ const BlogsSection = () => {
   });
 
   return (
-    <section id="blogs" className="h-[70vh] py-20">
+    <section id="blogs" className="h-[85vh] py-20">
       <h1 className="py-1">Featured Blogs</h1>
       <p className={cn(playpen_sans.className, "xs:text-xl py-2")}>
         {`"Sharing is not about giving up something, it’s about gaining more." — Unknown`}

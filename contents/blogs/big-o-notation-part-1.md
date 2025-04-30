@@ -3,8 +3,6 @@ title: "Let's talk about Big O notation! ( 1 )"
 slug: "big-o-notation-part-1"
 date: "2025-02-28"
 meta_data: {tags: ["BigO"]}
-
-
 ---
 
 Hello everyones, It’s been a while. During these days, I have been LeetCoding and I want to share some methods (algorithms) that I have learned.  Different people have different opinions on doing LeetCode, anyway it’s better than doing nothing. Right?

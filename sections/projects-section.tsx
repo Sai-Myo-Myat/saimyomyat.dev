@@ -33,6 +33,17 @@ const projects: ProjectType[] = [
     tags: ["React", "TypeScript", "Headless UI"],
     target: "_blank",
   },
+  {
+    id: 3,
+    title: "TableTap",
+    href: `${process.env.NEXT_PUBLIC_URL}/blogs/table-tap`,
+    source: "https://github.com/Tech-Notes/table-tap.console",
+    img: "/table-tap-logo.jpg",
+    description:
+      "TableTap is a self-ordering service designed for modern restaurants. By scanning a QR code, customers can view the menu, place orders directly from their phones, and have those orders sent to the kitchen and counter in real time.",
+    tags: ["Nextjs", "TypeScript", "Golang"],
+    target: "_parent",
+  },
 ];
 
 const ProjectsSection = () => {
