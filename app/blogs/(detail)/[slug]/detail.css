@@ -1,5 +1,5 @@
 h1, h2, h3 {
-    margin-top: 14px;
+    margin: 14px 0px;
 }
 
 code {
@@ -14,8 +14,8 @@ code {
 }
 
 ul li {
-    margin-left: 14px;
-    /* list-style-type: disc; */
+    margin-left: 18px;
+    list-style-type: disc;
     font-weight: 700;
 }
 
