@@ -1,4 +1,4 @@
-import { useQueryFunctionWrapper } from "@/api-base/base";
+import { fetchQueryFunctionWrapper } from "@/api-base/base";
 import { fetchBlog } from "@/api-base/cms-blogs";
 import getQueryClient from "@/api-base/query-client";
 import { blogKeys } from "@/api-base/query-keys/blogs";
@@ -14,7 +14,7 @@ const HydratedBlogDetail: React.FC<BlogDetailPageProps> = async ({
 
   await queryClient.prefetchQuery({
     queryKey: blogKeys.detail(slug),
-    queryFn: useQueryFunctionWrapper<string, BlogType>(fetchBlog, slug),
+    queryFn: fetchQueryFunctionWrapper<string, BlogType>(fetchBlog, slug),
   });
 
   const dehydratedState = dehydrate(queryClient);
