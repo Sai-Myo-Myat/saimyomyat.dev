@@ -11,7 +11,7 @@ const Footer = () => {
       />
       <LinkIcon
         icon={<LinkedinIcon />}
-        url="https://www.linkedin.com/in/saimyo-myat-862729229/"
+        url="https://www.linkedin.com/in/saimyomyat/"
         aria-label="Linkedin account"
       />
       <LinkIcon

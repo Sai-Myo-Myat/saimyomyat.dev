@@ -18,7 +18,7 @@ const BlogsSection = () => {
   });
 
   return (
-    <section id="blogs" className="h-[85vh] py-20">
+    <section id="blogs" className="min-h-[70vh] py-20">
       <h1 className="py-1">Featured Blogs</h1>
       <p className={cn(playpen_sans.className, "xs:text-xl py-2")}>
         {`"Sharing is not about giving up something, it’s about gaining more." — Unknown`}
@@ -26,7 +26,7 @@ const BlogsSection = () => {
       <div className="my-4 flex flex-col gap-4">
         {blogs?.length ? (
           blogs
-            ?.slice(0, 3)
+            ?.slice(0, 2)
             ?.map((blog) => (
               <BlogCard
                 key={blog.slug}
