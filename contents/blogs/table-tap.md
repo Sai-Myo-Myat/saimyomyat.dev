@@ -13,11 +13,11 @@ TableTap is a self-ordering service designed for modern restaurants. By scanning
 
 TableTap consists of three main applications:
 
-  - Console – Admin and kitchen dashboard (this repository)
+  - Console – Admin and kitchen dashboard
 
   - Shopper Web App – Customer-facing ordering interface (under development)
 
-  - API – Backend service for handling all application logic ([(repo)](https://github.com/Tech-Notes/table-tap.api))
+  - API – Backend service for handling all application logic
 
 ## Features
 
