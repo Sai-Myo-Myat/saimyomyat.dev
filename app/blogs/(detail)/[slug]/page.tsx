@@ -1,11 +1,10 @@
 import { fetchBlog } from "@/api-base/blogs";
-import { BlogDetailPageProps } from "@/types/blogs";
 import "./detail.css";
 import HydratedBlogDetail from "./hydrated-blog-detail";
 import { Metadata, ResolvingMetadata } from "next";
 
 export async function generateMetadata(
-  { params }: BlogDetailPageProps,
+  { params }: PageProps,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   // read route params
@@ -54,7 +53,7 @@ export async function generateMetadata(
   };
 }
 
-const BlogDetail = async ({ params }: BlogDetailPageProps) => {
+const BlogDetail = async ({ params }: PageProps) => {
   const { slug } = await params;
   return (
     <>

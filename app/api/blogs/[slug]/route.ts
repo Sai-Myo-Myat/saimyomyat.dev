@@ -8,7 +8,7 @@ const blogDir = path.join(process.cwd(), "contents/blogs");
 
 export async function GET(
   request: Request,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
   const { slug } = await params;
   const filePath = path.join(blogDir, `${slug}.md`);
