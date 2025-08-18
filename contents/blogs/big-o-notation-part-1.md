@@ -2,6 +2,7 @@
 title: "Let's talk about Big O notation! ( 1 )"
 slug: "big-o-notation-part-1"
 date: "2025-02-28"
+description: "Let's talk about Big O notation!"
 meta_data: {tags: ["BigO"]}
 ---
 

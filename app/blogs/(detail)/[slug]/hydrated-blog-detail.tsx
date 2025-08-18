@@ -10,7 +10,7 @@ const HydratedBlogDetail: React.FC<BlogDetailPageProps> = async ({
   params,
 }) => {
   const queryClient = getQueryClient();
-  const slug = params.slug;
+  const { slug } = params;
 
   await queryClient.prefetchQuery({
     queryKey: blogKeys.detail(slug),

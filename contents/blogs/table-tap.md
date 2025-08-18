@@ -2,9 +2,10 @@
 title: "TableTap"
 slug: "table-tap"
 date: "2025-04-30"
+image: "table-tap-logo.jpg"
+description: "TableTap is a self-ordering service designed for modern restaurants. By scanning a QR code, customers can view the menu, place orders directly from their phones, and have those orders sent to the kitchen and counter in real time. Payments are made at the counter after dining. No downloads, no wait time — just seamless ordering and dining."
 meta_data: {tags: ["Documentation"]}
 ---
-
 
 TableTap is a self-ordering service designed for modern restaurants. By scanning a QR code, customers can view the menu, place orders directly from their phones, and have those orders sent to the kitchen and counter in real time. Payments are made at the counter after dining.
 **No downloads, no wait time — just seamless ordering and dining.**
@@ -13,11 +14,11 @@ TableTap is a self-ordering service designed for modern restaurants. By scanning
 
 TableTap consists of three main applications:
 
-  - Console – Admin and kitchen dashboard
+- Console – Admin and kitchen dashboard
 
-  - Shopper Web App – Customer-facing ordering interface (under development)
+- Shopper Web App – Customer-facing ordering interface (under development)
 
-  - API – Backend service for handling all application logic
+- API – Backend service for handling all application logic
 
 ## Features
 
@@ -26,11 +27,11 @@ TableTap consists of three main applications:
 
 ## Upcoming Features
 
-  - Users and Roles management.
-  - Sales report graphs for daily, monthly, and yearly sales.
-  - Print order slips.
-  - Export reports, orders, and table data to Excel.
-  - Upload Excel files to create menu items.
+- Users and Roles management.
+- Sales report graphs for daily, monthly, and yearly sales.
+- Print order slips.
+- Export reports, orders, and table data to Excel.
+- Upload Excel files to create menu items.
 
 ## Project Status & Vision
 
@@ -39,11 +40,10 @@ Taking full responsibility for this project is also part of my personal growth j
 
 ## Tech Stack
 
-  - Frontend: Next.js, Typescript, Tailwind CSS, Shadcn UI
+- Frontend: Next.js, Typescript, Tailwind CSS, Shadcn UI
 
-  - Backend: Golang, PostgreSQL
+- Backend: Golang, PostgreSQL
 
-  - Real-time: WebSockets, Redis (Pub/Sub)
-  
-  - File Storage: Amazon S3 
+- Real-time: WebSockets, Redis (Pub/Sub)
 
+- File Storage: Amazon S3
